@@ -56,8 +56,8 @@ def draw_invoice_page(pdf, invoice, copy_type):
 
 
 
-    #pdf.drawString(350, height - 215, f"Office Hour: {invoice.customer.available_from} to {invoice.customer.available_to}")
-    #pdf.drawString(350, height - 235, f"Close on: {invoice.customer.close_day}" if invoice.customer.close_day else "")
+    #pdf.drawString(350, height - 215, f"Office Hour: {invoice.person.available_from} to {invoice.person.available_to}")
+    #pdf.drawString(350, height - 235, f"Close on: {invoice.person.close_day}" if invoice.person.close_day else "")
 
     # Salesman and Date
     pdf.setFont("Helvetica-Bold", 8)
